@@ -9,6 +9,10 @@ const phi = 3.14
 const aplikasi = "Belajar Golang"
 ```
 
+noted: pada dasarnya konstanta adalah variable tetapi variable yang sifatnya tidak dapat diubah kembali
+
+bedanya variable dengan konstanta adalah, variable jika tidak digunakan akan error namun konstanta tidak akan error namun tidak dapat di re-assign.
+
 #### konstanta bertipe dan tanpa tipe
 
 Golang memperbolehkan dua jenis konstanta:
