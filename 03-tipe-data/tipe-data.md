@@ -1,4 +1,4 @@
-# tipe data number
+# 1. tipe data number
 
 - integer
 - float
@@ -99,4 +99,29 @@ Contoh error di Go:
 var a int = 5
 var b float64 = 6.7
 c := a + b  // ❌ error: mismatched types int and float64
+```
+
+# 2. Tipe data String
+
+adalah tipe data karakter yang biasa kita sebut teks.
+
+function dalam string
+
+- len("string") -> digunakan untuk menghitung jumlah karakter
+- "string"[0] -> mengambil posisi dalam string (perlu diingat bahwa di golang string yang diambil ini bentuknya adalah byte, jadi ketika ingin mengambil karakter tertentu harus di konversi dulu)
+
+contoh len:
+
+```
+fmt.Println(len("asep sahrudin")) // outputnya: 13
+```
+
+contoh ambil posisi string
+
+```
+fmt.Println("asep sahrudin"[0]) // outputnya: 65
+
+note: 65 itu outputnya dalam bentuk byte jadi ketika ingin outputnya a untuk karakter pertama maka harus konversi tipe datanya dulu ke string
+
+fmt.Println(string("asep sahrudin"[0])) // outputnya: a
 ```
