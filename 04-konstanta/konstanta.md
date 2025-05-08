@@ -40,3 +40,11 @@ const (
 #### keyword iota (untuk nilai berurutan)
 
 golang menyediakan keyword iota untuk membuat urutan konstanta secara otomatis. biasanya digunakan dalam enum atau deklarasi bertingkat.
+
+```
+const (
+    A = iota // 0
+    B        // 1
+    C        // 2
+)
+```
