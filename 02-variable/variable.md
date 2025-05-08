@@ -11,6 +11,13 @@ dalam GO penulisan variable dapat di deklarasikan menjadi 3 cara:
 - const -> ini digunakan ketika nilai variable bersifat immutable (benar benar tidak akan berubah). contohnya untuk penulisan rumus seperti: const pi = 3.14 untuk menghitung lingkaran.
 - var -> digunakan untuk mendefinisikan variable jika kebutuhan nilainya berubah dan kebutuhannya global scope, ini bersifat muttable (dapat berubah)
 
+noted: di golang tidak boleh melakukan definisi variable yang sudah didefinisikan sebelumnya. kalau mau re-assign menggunakan tanda =
+
+```
+name := "Asep Sahrudin"
+name = "nama diganti"
+```
+
 ### Multiple Declaration
 
 kita juga bisa mendeklarasikan beberapa variable sekaligus.
