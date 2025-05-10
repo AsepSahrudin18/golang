@@ -78,3 +78,23 @@ func bagi(a, b int) (hasil int) {
 	return // cukup gunakan return tanpa argument
 }
 ```
+
+#### function disimpan dalam variable
+
+note: perlu diingat untuk membuat fungsi dalam variabel maka variable yang digunakan adalah variable global dengan var bukan dengan := karena bakalan error jika hal tersebut dituliskan dengan variable :=
+
+ini sesuai
+
+```
+var f = func(name string) {
+	fmt.Println("hai", name)
+}
+```
+
+ini salah dan error, karena variable := sifatnya local scope bukan global scope.
+
+```
+f := func(name string) {
+	fmt.Println("hai", name)
+}
+```

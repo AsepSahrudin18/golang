@@ -40,6 +40,10 @@ func bagi(a, b int) (hasil int) {
 	return // cukup gunakan return tanpa argument
 }
 
+var f = func(name string) {
+	fmt.Println("hai", name)
+}
+
 func main() {
 	// ini untuk memanggil fungsi yang lain yaa. untuk fungsi yang dipelajari yang diatas"nya. jadi fahami yang atasnya. (child nya) ini parentnya.
 	sapa();
@@ -64,4 +68,6 @@ func main() {
 
 	getBagi := bagi(10, 3);
 	fmt.Println(getBagi);
+
+	f("Golang!");
 }
