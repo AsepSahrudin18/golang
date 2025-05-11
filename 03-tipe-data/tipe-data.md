@@ -100,3 +100,7 @@ var a int = 5
 var b float64 = 6.7
 c := a + b  // ❌ error: mismatched types int and float64
 ```
+
+# konversi tipe data
+
+---
