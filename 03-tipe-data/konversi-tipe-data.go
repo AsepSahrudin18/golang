@@ -26,6 +26,5 @@ func main() {
 	var cekSaldo uint64 = 12000;
 	cekSaldo -= 10000;
 	fmt.Println(cekSaldo)
-
 }
 
