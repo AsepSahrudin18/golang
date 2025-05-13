@@ -19,10 +19,10 @@ func main() {
 	// contoh increment
 	var increment = 0;
 	increment++;
-	fmt.Println(increment);
+	fmt.Println(increment); // output: 1
 
 	// contoh decrement.
 	var decrement = 0;
 	decrement--;
-	fmt.Println(decrement);
+	fmt.Println(decrement); // output: -1
 }
