@@ -125,3 +125,43 @@ note: 65 itu outputnya dalam bentuk byte jadi ketika ingin outputnya a untuk kar
 
 fmt.Println(string("asep sahrudin"[0])) // outputnya: a
 ```
+
+# 3. mengecek limit tipe data.
+
+di Go, kita bisa mengecek batas maksimum dan minimum dari tipe data (seperti int, int8, int16, int32, int64) dengan bantuan package math.
+
+contoh untuk mengecek limit int.
+
+```
+fmt.Println("int8 :", math.MinInt8, "sampai", math.MaxInt8)
+fmt.Println("int16 :", math.MinInt16, "sampai", math.MaxInt16)
+fmt.Println("int32 :", math.MinInt32, "sampai", math.MaxInt32)
+fmt.Println("int64 :", math.MinInt64, "sampai", math.MaxInt64)
+```
+
+contoh untuk mengecek limit uint.
+
+```
+fmt.Println("cek limit tipe data uint")
+fmt.Println("uint8 :", 0, "sampai", math.MaxUint8)
+fmt.Println("uint16 :", 0, "sampai", math.MaxUint16)
+fmt.Println("uint32 :", 0, "sampai", math.MaxUint32)
+fmt.Println("uint64 :", 0, "sampai",uint64(math.MaxUint64)) // harus pakai unit64 biar aman.
+```
+
+✅ Kapan Pakai int?
+Gunakan int jika:
+
+- Nilai bisa positif atau negatif
+- Melibatkan pengurangan atau perbandingan negatif
+- Umum untuk index, counter, perhitungan matematis
+- Ingin portabilitas (default int menyesuaikan arsitektur 32/64-bit)
+
+contoh:
+
+```
+saldo := 1000;
+saldo -= 1200; // bisa jadi negatif.
+
+output: -200
+```
